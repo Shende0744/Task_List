@@ -1,201 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>First_Page</title>
-        <style>
-            .container{
-                width: 100%;
-                margin-left: auto;
-                margin-right: auto;
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-            .card{
-                background-color: #fff;
-                border: 1px solid #979797;
-                border-radius: 2px;
-                overflow: hidden;
-                max-width: 100%;
-                margin: auto;
-                padding: 10px;
-                transition: transform 0.3s ease;
-                display: flex;
-                flex-direction: column;
-            }
-            .card:hover{
-                transform: translateY(-2px);
-            }
-            .mt{
-                margin-top: 20px;
-            }
-            .card-body {
-                padding: 20px;
-                background-color: #f8f9fa;
-                border: 2px solid pink;
-                max-width: 90%;
-                margin: auto;
-                flex-direction: column;
-            }
-            .row{
-                display: flex;
-                flex-wrap: wrap;
-                margin-left: -15px;
-                margin-right: -15px;
-            }
-            .col{
-               padding-left: 2px; 
-               padding-right: 2px;
-               box-sizing: border-box;
-               flex: 5 0 5%;
-               max-width: 100%;
-               margin: auto;
-            }
-            .text-align-center{
-                text-align: center;
-            }
-            .tf{
-                background: #ff6b82;
-                padding: 1px 3px;
-                margin: 1px;
-                color: white;
-                /* font-weight: 550; */
-            }
-            .fz{
-                font-size: 18px;
-                font-weight: 550;
-            }
-            .input[type="radio"] {
-                width: 20px;
-                height: 20px;
-                margin: 10px;
-                cursor: pointer;
-            }
-            .input[type="radio"]:checked{
-                background : #ff6b82; 
-                border: #ff6b82;
-            }
-           .custom-task-cell {
-                min-height: 82vh;
-                height: auto;
-                border-radius: 15px;
-                border: 1px solid #eef1f4;
-                padding-bottom: 20px;
-                width: 32.8%;
-                overflow: hidden;
-           }
-           .mb-4, .my-4 {
-                margin-bottom: 1.5rem !important;
-            }
-            .mt-4, .my-4 {
-                margin-top: 1.5rem !important;
-            }
-            .flex-column {
-                flex-direction: column !important;
-            }
-            .d-flex {
-                display: flex !important
-            ;
-            }
-            *, :after, :before {
-                box-sizing: border-box;
-            }
-            * {
-                font-family: 'Montserrat';
-            }
-           
-            .task-font {
-                font-family: Poppins, sans-serif;
-                font-size: 20px;
-                font-weight: 500;
-                line-height: 27px;
-                text-align: center;
-                text-underline-position: from-font;
-                -webkit-text-decoration-skip-ink: none;
-                text-decoration-skip-ink: none;
-                font-weight: 600;
-            }
-            .color{
-                color: #ff6b82;
-            }
-            div {
-                display: block;
-                unicode-bidi: isolate;
-            }
-          
-            *, :after, :before {
-                box-sizing: border-box;
-            }
-            .custom_body {
-                font-size: 12px;
-                font-weight: 400;
-                font-family: 'Poppins', sans-serif;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="card-body">
-    
-                <div class="row text-align-center" style="max-width: 100%; margin: auto;">
-                    <div class="col"><hr></div>
-                    <h3 class="col task-font color">YAY! It's BOGO</h3>
-                    <div class="col"><hr></div>
-                </div>
-    
-                <div class="card mt">
-                    <div class="row mt" style="margin-left: -100px;">
-                        <input class="col input" type="radio">
-    
-                        <div class="col"  style="margin-left: -100px; line-height: 0.5;">
-                            <label for="1Unit" class="fz"> 1 Unit </label>
-                            <span class="tf fz">10% Off</span>
-                            <p>Standard Price</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First_Page</title>
+    <style>
+        .container{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .card{
+            background-color: #fff;
+            border: 1px solid #979797;
+            border-radius: 2px;
+            overflow: hidden;
+            max-width: 100%;
+            margin: auto;
+            padding: 10px;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover{
+            transform: translateY(-2px);
+            border: 3px solid #ff6b82;
+        }
+        .mt{
+            margin-top: 20px;
+        }
+        .card-body {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border: 2px solid pink;
+            max-width: 60%;
+            margin: auto;
+            flex-direction: column;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        .col{
+           padding-left: 2px; 
+           padding-right: 2px;
+           box-sizing: border-box;
+           flex: 5 0 5%;
+           max-width: 100%;
+           margin: 2px;
+        }
+        .text-align-center{
+            text-align: center;
+        }
+        .tf{
+            background: #ff6b82;
+            padding: 1px 3px;
+            margin: 1px;
+            color: white;
+            /* font-weight: 550; */
+        }
+        .fz{
+            font-size: 18px;
+            font-weight: 550;
+        }
+        .input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .input[type="radio"]:checked{
+            background : #ff6b82; 
+            border: #ff6b82;
+        }
+       .custom-task-cell {
+            min-height: 82vh;
+            height: auto;
+            border-radius: 15px;
+            border: 1px solid #eef1f4;
+            padding-bottom: 20px;
+            width: 32.8%;
+            overflow: hidden;
+       }
+       .mb-4, .my-4 {
+            margin-bottom: 1.5rem !important;
+        }
+        .mt-4, .my-4 {
+            margin-top: 1rem !important;
+        }
+        .flex-column {
+            flex-direction: column !important;
+        }
+        .d-flex {
+            display: flex !important
+        ;
+        }
+        *, :after, :before {
+            box-sizing: border-box;
+        }
+        * {
+            font-family: 'Montserrat';
+        }
+       
+        .task-font {
+            font-family: Poppins, sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 27px;
+            text-align: center;
+            text-underline-position: from-font;
+            -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+            font-weight: 600;
+        }
+        .color{
+            color: #ff6b82;
+        }
+        div {
+            display: block;
+            unicode-bidi: isolate;
+        }
+      
+        *, :after, :before {
+            box-sizing: border-box;
+        }
+        option:checked {
+            background: red linear-gradient(0deg, red 0%, red 100%);
+        }
+        select[multiple]:focus option:checked {
+            background: red linear-gradient(0deg, red 0%, red 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card-body">
+
+            <div class="row text-align-center" style="max-width: 100%; margin: auto;">
+                <div class="col"><hr></div>
+                <h3 class="col task-font color">YAY! It's BOGO</h3>
+                <div class="col"><hr></div>
+            </div>
+
+            <div class="card mt">
+                <div class="row mt" style="margin-left: -100px;">
+                    <input class="col input" type="radio" style="vertical-align: top;">
+
+                    <div class="col"  style="margin-left: -100px; line-height: 0.5;vertical-align: top;">
+                        <label for="1Unit" class="fz"> 1 Unit </label>
+                        <span class="tf fz">10% Off</span>
+                        <p>Standard Price</p>
+                        <div class="row">
+                            <div class="col fz" style="margin-left: 50px;">
+                                Size
+                            </div>
+                            <div class="col fz" style="margin-left: -50px;">
+                                Color
+                            </div>
                         </div>
-    
-                        <div class="col" style="margin-right: -90px; line-height: 0.5;">
-                            <label for="1Amount" class="fz" > $10.000 USD </label>
-                            <p style="text-decoration: line-through; font-size: 15px; color: #747474; ">$24.00 USD</p>
+
+                        <div class="mt-4">
+                            #1
+                            <select name="size1" id=""> Font Size
+                                <option value="Select">Select Size</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</ption>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                            <select name="size1" id=""> Font Size
+                                <option value="Select">Select Size</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</ption>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                            </select>
+                        </div>
+                        <div class="mt-4">
+                            #2
+                            <select name="size1" id=""> Font Size
+                                <option value="Select">Select Size</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</ption>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                            <select name="size1" id=""> Font Size
+                                <option value="Select">Select Size</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</ption>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                            </select>
                         </div>
                     </div>
-                </div>
-    
-                <div class="card mt">
-                    <div class="row mt" style="margin-left: -100px;">
-                        <input class="col input" type="radio">
-    
-                        <div class="col"  style="margin-left: -100px; line-height: 0.5;">
-                            <label for="1Unit" class="fz"> 1 Unit </label>
-                            <span class="tf fz">10% Off</span>
-                            <p>Standard Price</p>
-                        </div>
-    
-                        <div class="col" style="margin-right: -90px; line-height: 0.5;">
-                            <label for="1Amount" class="fz" > $10.000 USD </label>
-                            <p style="text-decoration: line-through; font-size: 15px; color: #747474; ">$24.00 USD</p>
-                        </div>
+
+                    <div class="col" style="margin-right: -90px; line-height: 0.5; vertical-align: top;">
+                        <label for="1Amount" class="fz" > $10.000 USD </label>
+                        <p style="text-decoration: line-through; font-size: 15px; color: #747474; ">$24.00 USD</p>
                     </div>
                 </div>
-    
-                <div class="card mt">
-                    <div class="row mt" style="margin-left: -100px;">
-    
-                        <input class="col input" type="radio">
-    
-                        <div class="col"  style="margin-left: -100px; line-height: 0.5;">
-                            <label for="1Unit" class="fz"> 1 Unit </label>
-                            <span class="tf fz">10% Off</span>
-                            <p>Standard Price</p>
-                        </div>
-    
-                        <div class="col" style="margin-right: -90px; line-height: 0.5;">
-                            <label for="1Amount" class="fz" >$10.000 USD </label>
-                            <p style="text-decoration: line-through; font-size: 15px; color: #747474; ">$24.00 USD</p>
-                        </div>
+
+            </div>
+
+            <div class="card mt">
+                <div class="row mt" style="margin-left: -100px;">
+                    <input class="col input" type="radio">
+
+                    <div class="col"  style="margin-left: -100px; line-height: 0.5;">
+                        <label for="1Unit" class="fz"> 1 Unit </label>
+                        <span class="tf fz">10% Off</span>
+                        <p>Standard Price</p>
+                    </div>
+
+                    <div class="col" style="margin-right: -90px; line-height: 0.5;">
+                        <label for="1Amount" class="fz" > $10.000 USD </label>
+                        <p style="text-decoration: line-through; font-size: 15px; color: #747474; ">$24.00 USD</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt">
+                <div class="row mt" style="margin-left: -100px;">
+
+                    <input class="col input" type="radio">
+
+                    <div class="col"  style="margin-left: -100px; line-height: 0.5;">
+                        <label for="1Unit" class="fz"> 1 Unit </label>
+                        <span class="tf fz">10% Off</span>
+                        <p>Standard Price</p>
+                    </div>
+
+                    <div class="col" style="margin-right: -90px; line-height: 0.5;">
+                        <label for="1Amount" class="fz" >$10.000 USD </label>
+                        <p style="text-decoration: line-through; font-size: 15px; color: #747474; ">$24.00 USD</p>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
