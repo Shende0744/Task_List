@@ -28,8 +28,23 @@
             transform: translateY(-2px);
             border: 3px solid #ff6b82;
         }
-        .mt{
+        .mt1{
+            margin-top: 10px;
+        }
+        .mt2{
             margin-top: 20px;
+        }
+        .mt3{
+            margin-top: 30px;
+        }
+        .mt4{
+            margin-top: 40px;
+        }
+        .mt5{
+            margin-top: 50px;
+        }
+        .mt6{
+            margin-top: 60px;
         }
         .card-body {
             padding: 20px;
@@ -145,65 +160,66 @@
                 <h3 class="col task-font color">YAY! It's BOGO</h3>
                 <div class="col"><hr></div>
             </div>
-
-            <div class="card mt">
-                <div class="row mt" style="margin-left: -100px;">
+            <div class="card mt2">
+                <div class="row mt" style="margin-left: -100px;" onclick="hideShowFunction(1)">
                     <input class="col input" type="radio" style="vertical-align: top;">
 
                     <div class="col"  style="margin-left: -100px; line-height: 0.5;vertical-align: top;">
                         <label for="1Unit" class="fz"> 1 Unit </label>
                         <span class="tf fz">10% Off</span>
                         <p>Standard Price</p>
-                        <div class="row">
-                            <div class="col fz" style="margin-left: 50px;">
-                                Size
+                        <div id="hideShowDive1">
+                            <div class="row">
+                                <div class="col fz" style="margin-left: 50px;">
+                                    Size
+                                </div>
+                                <div class="col fz" style="margin-left: -50px;">
+                                    Color
+                                </div>
                             </div>
-                            <div class="col fz" style="margin-left: -50px;">
-                                Color
-                            </div>
-                        </div>
 
-                        <div class="mt-4">
-                            #1
-                            <select name="size1" id=""> Font Size
-                                <option value="Select">Select Size</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</ption>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                            </select>
-                            <select name="size1" id=""> Font Size
-                                <option value="Select">Select Size</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</ption>
-                                <option value="">5</option>
-                                <option value="">6</option>
-                            </select>
-                        </div>
-                        <div class="mt-4">
-                            #2
-                            <select name="size1" id=""> Font Size
-                                <option value="Select">Select Size</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</ption>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                            </select>
-                            <select name="size1" id=""> Font Size
-                                <option value="Select">Select Size</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</ption>
-                                <option value="">5</option>
-                                <option value="">6</option>
-                            </select>
+                            <div class="mt-4">
+                                #1
+                                <select name="size1" id=""> Font Size
+                                    <option value="Select">Select Size</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</ption>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <select name="size1" id=""> Font Size
+                                    <option value="Select">Select Size</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</ption>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                </select>
+                            </div>
+                            <div class="mt-4">
+                                #2
+                                <select name="size1" id=""> Font Size
+                                    <option value="Select">Select Size</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</ption>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <select name="size1" id=""> Font Size
+                                    <option value="Select">Select Size</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</ption>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
 
@@ -212,44 +228,157 @@
                         <p style="text-decoration: line-through; font-size: 15px; color: #747474; ">$24.00 USD</p>
                     </div>
                 </div>
-
             </div>
+            <div class="card mt2">
+                <div class="row mt" style="margin-left: -100px;" onclick="hideShowFunction(2)">
+                    <input class="col input" type="radio" style="vertical-align: top;">
 
-            <div class="card mt">
-                <div class="row mt" style="margin-left: -100px;">
-                    <input class="col input" type="radio">
-
-                    <div class="col"  style="margin-left: -100px; line-height: 0.5;">
+                    <div class="col"  style="margin-left: -100px; line-height: 0.5;vertical-align: top;">
                         <label for="1Unit" class="fz"> 1 Unit </label>
                         <span class="tf fz">10% Off</span>
                         <p>Standard Price</p>
+                        <div id="hideShowDive2">
+                            <div class="row">
+                                <div class="col fz" style="margin-left: 50px;">
+                                    Size
+                                </div>
+                                <div class="col fz" style="margin-left: -50px;">
+                                    Color
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                #1
+                                <select name="size1" id=""> Font Size
+                                    <option value="Select">Select Size</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</ption>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <select name="size1" id=""> Font Size
+                                    <option value="Select">Select Size</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</ption>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                </select>
+                            </div>
+                            <div class="mt-4">
+                                #2
+                                <select name="size1" id=""> Font Size
+                                    <option value="Select">Select Size</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</ption>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <select name="size1" id=""> Font Size
+                                    <option value="Select">Select Size</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</ption>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col" style="margin-right: -90px; line-height: 0.5;">
+                    <div class="col" style="margin-right: -90px; line-height: 0.5; vertical-align: top;">
                         <label for="1Amount" class="fz" > $10.000 USD </label>
                         <p style="text-decoration: line-through; font-size: 15px; color: #747474; ">$24.00 USD</p>
                     </div>
                 </div>
             </div>
+            <div class="card mt2">
+                <div class="row mt" style="margin-left: -100px;" onclick="hideShowFunction(3)">
+                    <input class="col input" type="radio" style="vertical-align: top;">
 
-            <div class="card mt">
-                <div class="row mt" style="margin-left: -100px;">
-
-                    <input class="col input" type="radio">
-
-                    <div class="col"  style="margin-left: -100px; line-height: 0.5;">
+                    <div class="col"  style="margin-left: -100px; line-height: 0.5;vertical-align: top;">
                         <label for="1Unit" class="fz"> 1 Unit </label>
                         <span class="tf fz">10% Off</span>
                         <p>Standard Price</p>
+                        <div id="hideShowDive3">
+                            <div class="row">
+                                <div class="col fz" style="margin-left: 50px;">
+                                    Size
+                                </div>
+                                <div class="col fz" style="margin-left: -50px;">
+                                    Color
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                #1
+                                <select name="size1" id=""> Font Size
+                                    <option value="Select">Select Size</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</ption>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <select name="size1" id=""> Font Size
+                                    <option value="Select">Select Size</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</ption>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                </select>
+                            </div>
+                            <div class="mt-4">
+                                #2
+                                <select name="size1" id=""> Font Size
+                                    <option value="Select">Select Size</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</ption>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <select name="size1" id=""> Font Size
+                                    <option value="Select">Select Size</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</ption>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col" style="margin-right: -90px; line-height: 0.5;">
-                        <label for="1Amount" class="fz" >$10.000 USD </label>
+                    <div class="col" style="margin-right: -90px; line-height: 0.5; vertical-align: top;">
+                        <label for="1Amount" class="fz" > $10.000 USD </label>
                         <p style="text-decoration: line-through; font-size: 15px; color: #747474; ">$24.00 USD</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        function hideShowFunction(divList){
+            var hideShow = document.getElementById("hideShowDive" + divList);
+                if (hideShow.style.display === "none" || hideShow.style.display === "") {
+                    hideShow.style.display = "block";
+                } else {
+                    hideShow.style.display = "none";
+                }
+        }        
+    </script>
 </body>
 </html>
