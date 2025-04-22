@@ -1,0 +1,233 @@
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+    }
+
+    .container {
+        max-width: 750px;
+        margin: auto;
+        /* padding: auto; */
+    }
+
+    .card {
+        background-color: #fff;
+        border: 1px solid #979797;
+        border-radius: 2px;
+        overflow: hidden;
+        /* max-width: 800px; */
+        margin: 20px auto;
+        padding: 10px;
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .card:hover {
+        transform: translateY(-2px);
+        border: 3px solid #ff6b82;
+    }
+
+    .mt1 {
+        margin-top: 10px;
+    }
+
+    .mt2 {
+        margin-top: 20px;
+    }
+
+    .mt3 {
+        margin-top: 30px;
+    }
+
+    .mt4 {
+        margin-top: 40px;
+    }
+
+    .mt5 {
+        margin-top: 50px;
+    }
+
+    .mt6 {
+        margin-top: 60px;
+    }
+    .mb1{
+        margin-bottom: 10px;
+    }
+    .mb2 {
+        margin-bottom: 20px;
+    }
+
+    .mb3 {
+        margin-bottom: 30px;
+    }
+
+    .mb4 {
+        margin-bottom: 40px;
+    }
+
+    .mb5 {
+        margin-bottom: 50px;
+    }
+
+    .mb6 {
+        margin-bottom: 60px;
+    }
+    .card-body {
+        padding: 20px;
+        background-color: #f8f9fa;
+        border: 2px solid pink;
+        max-width: 75%;
+        margin: auto;
+        /* flex-direction: column; */
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap; 
+    }
+
+    .col {
+        flex: 1;
+        padding: 5px;
+    }
+
+    .text-align-center {
+        text-align: center;
+    }
+
+    .tf {
+        background: #ff6b82;
+        padding: 1px 3px;
+        margin: 1px;
+        color: white;
+        font-size: 16px;
+        /* font-weight: 550; */
+    }
+
+    .fs {
+        color: #ff6b82;
+        font-size: 16px;
+        font-weight: 550;
+    }
+
+    .fz {
+        font-size: 18px;
+        font-weight: 550;
+    }
+
+    .fz14 {
+        font-size: 14px;
+    }
+
+    .input[type="radio"] {
+        width: 12px;
+        height: 12px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .input[type="radio"]:checked {
+        background: #ff6b82;
+        border: #ff6b82;
+    }
+
+    .custom-task-cell {
+        min-height: 82vh;
+        height: auto;
+        border-radius: 15px;
+        border: 1px solid #eef1f4;
+        padding-bottom: 20px;
+        width: 32.8%;
+        /* overflow: hidden; */
+    }
+
+    .flex-column {
+        flex-direction: column !important;
+    }
+
+    .d-flex {
+        display: flex !important;
+    }
+
+    *,
+    :after,
+    :before {
+        box-sizing: border-box;
+    }
+
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .task-font {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: center;
+        text-underline-position: from-font;
+        -webkit-text-decoration-skip-ink: none;
+        text-decoration-skip-ink: none;
+        font-weight: 600;
+    }
+
+    .color {
+        color: #ff6b82;
+    }
+
+    div {
+        display: block;
+        unicode-bidi: isolate;
+    }
+
+    *,
+    :after,
+    :before {
+        box-sizing: border-box;
+    }
+
+    option:checked {
+        background: rgb(63, 200, 125) linear-gradient(0deg, rgb(0, 255, 42) 0%, rgb(0, 255, 8) 100%);
+    }
+
+    select[multiple]:focus option:checked {
+        background: rgb(43, 49, 221) linear-gradient(0deg, rgb(0, 34, 255) 0%, rgb(60, 0, 255) 100%);
+    }
+    .br-rd{
+        border-radius: 5px;    
+    }
+    .btn{
+        width: 100%;
+        background-color: #ff6b82;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer; 
+    }
+    .sm-t{
+        color:#979797;
+        font-size: 12px;
+        float: right;
+        padding: 2px;
+        font-size: 12px;
+        color: #aaa;
+        font-style: italic;
+    }
+    .most-popular{
+        position: relative;
+        /* z-index: 1500; */
+        top: -10px;
+        margin-left: auto;
+        width: fit-content;
+        float: right;
+
+        background-color: #ff6b82;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 5px 5px;
+        border-radius: 0 0 5px 5px;
+    }
